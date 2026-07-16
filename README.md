@@ -110,7 +110,7 @@ This is an academic prototype, not a production-ready system. A few simplificati
 <summary>🇧🇷 <b>Ler em Português (BR)</b></summary>
 <br>
 
-Trabalho acadêmico desenvolvido para a disciplina de **Programação Web**. Um Progressive Web App (PWA) construído para a campanha de marketing de uma marca fictícia de biscoitos: o cliente escaneia com a câmera do celular o QR-Code impresso na embalagem, e ele é registrado na conta dele. Ao final da promoção, QR-Codes vencedores são sorteados e o cliente correspondente é notificado instantaneamente via **Web Push**, mesmo com o app fechado.
+Trabalho acadêmico desenvolvido para a disciplina de **Programação para WEB**. Um Progressive Web App (PWA) construído para a campanha de marketing de uma marca fictícia de biscoitos: o cliente escaneia com a câmera do celular o QR-Code impresso na embalagem, e ele é registrado na conta dele. Ao final da promoção, QR-Codes vencedores são sorteados e o cliente correspondente é notificado instantaneamente via **Web Push**, mesmo com o app fechado.
 
 ### 🛠️ Tecnologias
 
