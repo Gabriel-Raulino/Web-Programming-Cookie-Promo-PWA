@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promoção Biscoitos X</title>
+  <link rel="manifest" href="/manifest.json">
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f8fafc; margin: 0; padding: 20px; text-align: center; }
+    .container { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); max-width: 400px; margin: 0 auto; }
+    button { background: #f97316; color: white; border: none; padding: 12px 20px; border-radius: 8px; width: 100%; font-size: 16px; margin-top: 10px; cursor: pointer; font-weight: bold; }
+    input { width: 90%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; }
+    #app-section { display: none; }
+    #reader { width: 100%; margin-top: 15px; border-radius: 8px; overflow: hidden; }
+    ul { list-style: none; padding: 0; }
+    li { background: #e2e8f0; padding: 10px; margin: 5px 0; border-radius: 6px; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>🍪 Promoção Biscoito X</h2>
+
+    <div id="login-section">
+      <p>Cadastre-se ou faça login:</p>
+      <input type="text" id="nome" placeholder="Seu Nome">
+      <input type="email" id="email" placeholder="Seu E-mail">
+      <input type="password" id="senha" placeholder="Sua Senha">
+      <button onclick="fazerLogin()">Entrar / Cadastrar</button>
+    </div>
+
+    <div id="app-section">
+      <h3 id="bem-vindo"></h3>
+      
+      <button onclick="iniciarCamera()">📷 Ler QR Code</button>
+      
+      <div id="reader"></div>
+
+      <h3>Meus Códigos:</h3>
+      <ul id="lista-codigos"></ul>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

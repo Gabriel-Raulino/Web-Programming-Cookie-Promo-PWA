@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador da Fábrica - Biscoitos X</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; background: #334155; margin: 0; padding: 20px; text-align: center; color: white; }
+    .container { background: #1e293b; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); max-width: 400px; margin: 0 auto; }
+    button { background: #10b981; color: white; border: none; padding: 12px 20px; border-radius: 8px; width: 100%; font-size: 16px; margin-top: 15px; cursor: pointer; font-weight: bold; }
+    button:hover { background: #059669; }
+    input { width: 90%; padding: 12px; margin: 10px 0; border: none; border-radius: 8px; font-size: 16px; text-align: center; }
+    #qrcode { margin-top: 25px; display: flex; justify-content: center; background: white; padding: 20px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>🏭 Sistema da Fábrica</h2>
+    <p>Gere o código para imprimir na embalagem:</p>
+    
+    <input type="text" id="codigo" placeholder="Ex: 123">
+    <button onclick="gerarQRCode()">Gerar QR Code</button>
+    
+    <div id="qrcode"></div>
+  </div>
+
+  <script>
+    function gerarQRCode() {
+      const texto = document.getElementById("codigo").value;
+      const containerQr = document.getElementById("qrcode");
+      
+      if (!texto) {
+        alert("Por favor, digite um código!");
+        return;
+      }
+
+
+      containerQr.innerHTML = "";
+
+      new QRCode(containerQr, {
+        text: texto,
+        width: 250,
+        height: 250,
+        colorDark : "#000000",
+        colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.H
+      });
+    }
+  </script>
+</body>
+</html>

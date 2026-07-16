@@ -1,0 +1,15 @@
+{
+  "name": "Biscoitos X - Promoção",
+  "short_name": "BiscoitosX",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f97316",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/1047/1047711.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
